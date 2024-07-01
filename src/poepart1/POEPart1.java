@@ -30,8 +30,8 @@ System.out.print("Make sure it contains an underscore(_) and is at least 5 chara
 input.nextLine();
 System.out.print("Please enter your personal password>> ");
 String passWord = input.nextLine();
-//input.nextLine();
-//System.out.print("Make sure it contains a number, a Capital letter, a Special character and is more than 8 characters long.");
+input.nextLine();
+System.out.print("Make sure it contains a number, a Capital letter, a Special character and is more than 8 characters long.");
 
 
 
@@ -54,7 +54,6 @@ System.out.println(logStatus);
 
 Tasks tasks=new Tasks();
 tasks.displayMenu();
-tasks.AddTasks();
 
 
 
@@ -171,7 +170,7 @@ public String returnLogStatus(Register register)//This method returns the status
 if (logUser(register))
 {
 
-return "Welcome" + register.firstName + " "+ register.lastName +", it is great to see you again";
+return "Welcome " + register.firstName + " "+ register.lastName +" ,it is great to see you again";
        
 } else {
     System.out.println("The entered Username or Password is incorrect. Please try again");
